@@ -1,0 +1,8 @@
+[package]
+name = "cliputil"
+version = "0.1.0"
+authors = ["statiolake <statiolake@gmail.com>"]
+
+[dependencies]
+clipboard = "0.4.6"
+isatty = { git = "https://github.com/statiolake/isatty" }
