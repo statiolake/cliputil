@@ -26,6 +26,7 @@ fn write() -> Result<(), Box<dyn Error>> {
     let mut input = String::new();
     let stdin = io::stdin();
     stdin.lock().read_to_string(&mut input)?;
+    input = input.trim().into();
     let mut provider = ClipboardContext::new()?;
     provider.set_contents(input)
 }
